@@ -1,0 +1,37 @@
+#nossa calculadora
+
+#cria uma funçao
+def mostrar_menu():
+ print('0 - sair')
+ print('+ - somar')
+ print('- - subtrair')
+ print('* - multiplicar')
+ print('/ - dividir')
+ print('sen - seno')
+ print('cos - cosseno')
+ print('elevado - potencia')
+ print('raiz - calcular a raiz')
+
+def somar():
+ numero1 = float(input('numero 1:'))
+ numero2 = float(input('numero2:'))
+ resultado = numero1 + numero2
+ print('resultado da soma:', resultado)
+
+def subtrair():
+  numero1 = float(input('numero1:'))
+  numero2 = float(input('numero2:'))
+  resultrair = numero1 - numero2
+  print('resultado da subtração:', resultrair)
+
+ligado = True
+  
+while ligado == True:
+ mostrar_menu()
+ opcao = input('opçao:')
+ if opcao == "0":
+   ligado = False
+ elif opcao == "+":
+   somar()
+ elif opcao == '-':
+   subtrair()
