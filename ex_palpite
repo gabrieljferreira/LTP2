@@ -1,0 +1,12 @@
+#Qquando utilizado =, é uma ordem
+numero_secreto = 32
+
+palpite = int(input('informe um palpite'))
+#quando utilizamos ==, estamos fazendo uma pergunta
+if palpite == numero_secreto:
+  print('acertou')
+else: 
+  if palpite > numero_secreto:
+    print('chute um numero menor!')
+  else:
+    print('chute um numero maior')
