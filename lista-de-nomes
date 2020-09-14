@@ -1,0 +1,34 @@
+#cria uma lista de nomes que o usuario digitar ate que ele não queira mais continuar 
+#exibindo todos os nomes em ordem alfabetica
+#cria uma lista vazia para os nomes
+nomes = []
+
+#cria uma repetiçao que pergunta se o usuario quer continuar
+continuar = True
+while continuar == True:
+  nome = input('informe um nome:')
+  #coloca o nome no final da lista
+  nomes.append(nome)
+  #exibe a parcial da lista com os nomes
+  print(nomes)
+  if input('deseja continuar (s/n)?') == 's':
+    continuar = True
+  else:
+      continuar = False
+
+      #como o codigo acima ja funciona, vamos considerar que a lista
+      #já existem nomes inseridos nela
+
+      #nomes=['Angelina Jolie', 'Mel Gibson','Bruce Wilys','Nicolas Cage','Sasha Grey', 'Keanu Reaves']
+      
+      #coloca a lista em ordem
+      #nomes.sort{}
+      #print(nomes)
+
+      #procura um valor dentro de uma lista
+      #nome =input('Quem Deseja Procurar?')
+
+      #if nomes in nomes:
+      #print('encontrei na posiçao:'nomes.index(nome))
+      #else:
+      #print('Registro Não Encontrado')
