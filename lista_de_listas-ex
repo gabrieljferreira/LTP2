@@ -1,0 +1,13 @@
+'''listas de listas - tabela'''
+#pede para o usuario informar uma quantidade de produtos e depois
+#faz a leitura dessa quantidade, lendo nome e valor de cada item.
+
+lista_de_compras = []
+
+quantidade = int(input('informe a quantidade:'))
+
+while len(lista_de_compras) < quantidade:
+  nome = input("nome do produto:")
+  preço = float(input('preço:'))
+  lista_de_compras.append([nome, preço])
+  print(lista_de_compras)
